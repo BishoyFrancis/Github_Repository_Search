@@ -7,4 +7,9 @@
 ```npm start```
 5. Scan the Code and DONE !
 
-
+### Future Work (Enhancements)
+1. Fetch API using redux-toolkit with `createAsyncThunk`
+2. Refactor The Theme Technique With Less Hustle
+3. Add Favourites Section for user to add favourite Repositories for later use.
+4. Add Activity indicator when Fetching Data
+5. Exit Splash screen when any fetch request has finished state (using creatAsyncThunk as middleware will provide)
