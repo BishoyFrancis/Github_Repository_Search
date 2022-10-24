@@ -33,6 +33,9 @@ const Repos = () => {
       console.log("NO Language")
       fetch(`https://api.github.com/search/repositories?q=created:>${queryDate}&stars:>0&sort=stars&order=desc&per_page=100`).then(res=>res.json()).then(json=>setData(json['items']))
     }
+    else{
+      fetch(`https://api.github.com/search/repositories?q=language:${qLanguage}&created:>${qDate}&stars:>0&order=desc&per_page=50`).then(res=>res.json()).then(json=>setData(json['items']))
+    }
   }
 
   const fetchWithLanguage = (qDate , qLanguage)=>{
